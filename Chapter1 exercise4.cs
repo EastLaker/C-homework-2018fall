@@ -11,7 +11,7 @@ namespace ConsoleApplication1
         static void Main(string[] args)
         {
             /* 我的第一个 C# 程序*/
-            //string name="yinbangguo";
+            //string name="chenhongfei";
             //string s = "";
             //int n = 0;
             //double d =0;
