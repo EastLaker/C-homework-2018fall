@@ -31,7 +31,7 @@ namespace ConsoleApplication1
             string figure1, figure2;
             figure1 = Console.ReadLine();
             figure2 = Console.ReadLine();
-            Console.WriteLine("The product of {0} and {1} is "+int.Parse(figure1) * int.Parse(figure2),figure1,figure2);
+            Console.WriteLine("The product of {0} and {1} is "+double.Parse(figure1) * double.Parse(figure2),figure1,figure2);
             Console.ReadKey();
         }
     }

@@ -24,7 +24,7 @@ namespace WindowsFormsApplication1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.textBox6.Text = (int.Parse(this.textBox5.Text) * int.Parse(this.textBox4.Text)).ToString();
+            this.textBox6.Text = (double.Parse(this.textBox5.Text) * double.Parse(this.textBox4.Text)).ToString();
         }
     }
 }
