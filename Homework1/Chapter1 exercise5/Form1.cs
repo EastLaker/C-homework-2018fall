@@ -19,7 +19,14 @@ namespace Chapter1_exercise5
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.textBox3.Text = (double.Parse(this.textBox1.Text) * double.Parse(this.textBox2.Text)).ToString();
+            try
+            {
+                this.textBox3.Text = (double.Parse(this.textBox1.Text) * double.Parse(this.textBox2.Text)).ToString();
+            }
+            catch
+            {
+                this.textBox3.Text="无法处理";
+            }
         }
     }
 }
