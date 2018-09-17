@@ -14,21 +14,28 @@ namespace Exercise6
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please input an intger: ");
-            int target=int.Parse(Console.ReadLine());
-            //int[] primes=new int[1000];
-            int i = 2;
-            while(target>=i)
+            while (true)
             {
-                if(target%i==0)
+                try
                 {
-                    target = target / i;
-                    Console.Write(i + " ");
+                    Console.WriteLine("Please input an intger: ");
+                    int target = int.Parse(Console.ReadLine());
+                    //int[] primes=new int[1000];
+                    int i = 2;
+                    while (target >= i)
+                    {
+                        if (target % i == 0)
+                        {
+                            target = target / i;
+                            Console.Write(i + " ");
+                        }
+                        if (target % i != 0)
+                        {
+                            i++;
+                        }
+                    }
                 }
-                if (target % i != 0)
-                {
-                    i++;
-                }
+                catch { Console.WriteLine("invalid input!"); }
             }
             Console.ReadLine();
         }
