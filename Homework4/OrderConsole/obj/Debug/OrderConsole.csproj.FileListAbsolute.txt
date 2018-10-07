@@ -1,0 +1,12 @@
+D:\sourcefile\ConsoleApplication4\OrderConsole\bin\Debug\OrderConsole.exe.config
+D:\sourcefile\ConsoleApplication4\OrderConsole\bin\Debug\OrderConsole.exe
+D:\sourcefile\ConsoleApplication4\OrderConsole\bin\Debug\OrderConsole.pdb
+D:\sourcefile\ConsoleApplication4\OrderConsole\obj\Debug\OrderConsole.csprojResolveAssemblyReference.cache
+D:\sourcefile\ConsoleApplication4\OrderConsole\obj\Debug\OrderConsole.exe
+D:\sourcefile\ConsoleApplication4\OrderConsole\obj\Debug\OrderConsole.pdb
+D:\sourcefile\C#homework\C-homework-2018fall\Homework4\OrderConsole\bin\Debug\OrderConsole.exe.config
+D:\sourcefile\C#homework\C-homework-2018fall\Homework4\OrderConsole\obj\Debug\OrderConsole.exe
+D:\sourcefile\C#homework\C-homework-2018fall\Homework4\OrderConsole\obj\Debug\OrderConsole.pdb
+D:\sourcefile\C#homework\C-homework-2018fall\Homework4\OrderConsole\bin\Debug\OrderConsole.exe
+D:\sourcefile\C#homework\C-homework-2018fall\Homework4\OrderConsole\bin\Debug\OrderConsole.pdb
+D:\sourcefile\C#homework\C-homework-2018fall\Homework4\OrderConsole\obj\Debug\OrderConsole.csprojResolveAssemblyReference.cache

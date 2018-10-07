@@ -1,0 +1,12 @@
+D:\sourcefile\ConsoleApplication4\AlarmClock\bin\Debug\AlarmClock.exe.config
+D:\sourcefile\ConsoleApplication4\AlarmClock\bin\Debug\AlarmClock.exe
+D:\sourcefile\ConsoleApplication4\AlarmClock\bin\Debug\AlarmClock.pdb
+D:\sourcefile\ConsoleApplication4\AlarmClock\obj\Debug\AlarmClock.exe
+D:\sourcefile\ConsoleApplication4\AlarmClock\obj\Debug\AlarmClock.pdb
+D:\sourcefile\ConsoleApplication4\AlarmClock\obj\Debug\AlarmClock.csprojResolveAssemblyReference.cache
+D:\sourcefile\C#homework\C-homework-2018fall\Homework4\AlarmClock\bin\Debug\AlarmClock.exe.config
+D:\sourcefile\C#homework\C-homework-2018fall\Homework4\AlarmClock\bin\Debug\AlarmClock.exe
+D:\sourcefile\C#homework\C-homework-2018fall\Homework4\AlarmClock\bin\Debug\AlarmClock.pdb
+D:\sourcefile\C#homework\C-homework-2018fall\Homework4\AlarmClock\obj\Debug\AlarmClock.csprojResolveAssemblyReference.cache
+D:\sourcefile\C#homework\C-homework-2018fall\Homework4\AlarmClock\obj\Debug\AlarmClock.exe
+D:\sourcefile\C#homework\C-homework-2018fall\Homework4\AlarmClock\obj\Debug\AlarmClock.pdb
