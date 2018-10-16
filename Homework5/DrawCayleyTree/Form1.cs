@@ -18,17 +18,20 @@ namespace DrawCayleyTree
         double per2 = 0.7;
         int leng = 100;
         Graphics graphics;
+        Pen myPen;
+        float width = 1.5f;
         public Form1()
         {           
             InitializeComponent();
             graphics = this.CreateGraphics();
-            graphics.Clip = new Region(new Rectangle(5, 5, 700, 700));
+            graphics.Clip = new Region(new Rectangle(0, 0, 1200, 700));
+            myPen = new Pen(Color.Blue, width);
         }
 
         private void drawButton_Click(object sender, EventArgs e)
         {
             graphics.Clear(Color.Wheat);
-            drawCayleyTree(10, 250, 500, leng, -Math.PI / 2);           
+            drawCayleyTree(10, 400, 500, leng, -Math.PI / 2);           
         }
 
         void drawCayleyTree(int n,
@@ -47,7 +50,7 @@ namespace DrawCayleyTree
         void drawLine(double x0, double y0, double x1, double y1)
         {
             graphics.DrawLine(
-                Pens.Blue,
+                myPen,
                 (int)x0, (int)y0, (int)x1, (int)y1);
         }
 
@@ -74,6 +77,28 @@ namespace DrawCayleyTree
         private void trackBar5_Scroll(object sender, EventArgs e)
         {
             per2 = trackBar5.Value / 10.0;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string s=comboBox1.SelectedItem.ToString();
+            Color tempColor;
+            switch(s)
+            {
+                case "Black":tempColor = Color.Black;break;
+                case "Blue": tempColor = Color.Blue; break;
+                case "Yellow": tempColor = Color.Yellow; break;
+                case "Red": tempColor = Color.Red; break;
+                case "Green": tempColor = Color.Green; break;
+                default:
+                    tempColor = Color.Green;break;
+            }
+            myPen.Color = tempColor;
+        }
+
+        private void trackBar6_Scroll(object sender, EventArgs e)
+        {
+            myPen.Width = trackBar6.Value/10.0f;
         }
     }
 }

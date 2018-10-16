@@ -39,16 +39,21 @@
             this.trackBar5 = new System.Windows.Forms.TrackBar();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.trackBar6 = new System.Windows.Forms.TrackBar();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).BeginInit();
             this.SuspendLayout();
             // 
             // drawButton
             // 
-            this.drawButton.Location = new System.Drawing.Point(298, 565);
+            this.drawButton.Location = new System.Drawing.Point(57, 565);
             this.drawButton.Name = "drawButton";
             this.drawButton.Size = new System.Drawing.Size(75, 23);
             this.drawButton.TabIndex = 0;
@@ -69,7 +74,7 @@
             // 
             // trackBar2
             // 
-            this.trackBar2.Location = new System.Drawing.Point(591, 2);
+            this.trackBar2.Location = new System.Drawing.Point(85, 165);
             this.trackBar2.Maximum = 30;
             this.trackBar2.Minimum = 10;
             this.trackBar2.Name = "trackBar2";
@@ -80,7 +85,7 @@
             // 
             // trackBar3
             // 
-            this.trackBar3.Location = new System.Drawing.Point(284, 605);
+            this.trackBar3.Location = new System.Drawing.Point(85, 294);
             this.trackBar3.Maximum = 150;
             this.trackBar3.Minimum = 20;
             this.trackBar3.Name = "trackBar3";
@@ -92,7 +97,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(233, 614);
+            this.label1.Location = new System.Drawing.Point(27, 310);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 15);
             this.label1.TabIndex = 4;
@@ -110,7 +115,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(518, 6);
+            this.label3.Location = new System.Drawing.Point(12, 174);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(67, 15);
             this.label3.TabIndex = 6;
@@ -119,19 +124,23 @@
             // trackBar4
             // 
             this.trackBar4.Location = new System.Drawing.Point(85, 52);
-            this.trackBar4.Maximum = 8;
+            this.trackBar4.Maximum = 9;
+            this.trackBar4.Minimum = 4;
             this.trackBar4.Name = "trackBar4";
             this.trackBar4.Size = new System.Drawing.Size(104, 56);
             this.trackBar4.TabIndex = 7;
+            this.trackBar4.Value = 4;
             this.trackBar4.Scroll += new System.EventHandler(this.trackBar4_Scroll);
             // 
             // trackBar5
             // 
-            this.trackBar5.Location = new System.Drawing.Point(591, 52);
-            this.trackBar5.Maximum = 8;
+            this.trackBar5.Location = new System.Drawing.Point(85, 232);
+            this.trackBar5.Maximum = 9;
+            this.trackBar5.Minimum = 4;
             this.trackBar5.Name = "trackBar5";
             this.trackBar5.Size = new System.Drawing.Size(104, 56);
             this.trackBar5.TabIndex = 8;
+            this.trackBar5.Value = 4;
             this.trackBar5.Scroll += new System.EventHandler(this.trackBar5_Scroll);
             // 
             // label4
@@ -146,17 +155,66 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(533, 52);
+            this.label5.Location = new System.Drawing.Point(27, 232);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 15);
             this.label5.TabIndex = 10;
             this.label5.Text = "左枝：";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Red",
+            "Blue",
+            "Black",
+            "Green",
+            "Yellow"});
+            this.comboBox1.Location = new System.Drawing.Point(83, 356);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(106, 23);
+            this.comboBox1.TabIndex = 11;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(20, 359);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(52, 15);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "颜色：";
+            // 
+            // trackBar6
+            // 
+            this.trackBar6.Location = new System.Drawing.Point(85, 103);
+            this.trackBar6.Maximum = 30;
+            this.trackBar6.Minimum = 10;
+            this.trackBar6.Name = "trackBar6";
+            this.trackBar6.Size = new System.Drawing.Size(104, 56);
+            this.trackBar6.TabIndex = 13;
+            this.trackBar6.Value = 10;
+            this.trackBar6.Scroll += new System.EventHandler(this.trackBar6_Scroll);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(27, 117);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(52, 15);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "粗细：";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(702, 673);
+            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.trackBar6);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.trackBar5);
@@ -175,6 +233,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.trackBar3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar6)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -193,6 +252,10 @@
         private System.Windows.Forms.TrackBar trackBar5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TrackBar trackBar6;
+        private System.Windows.Forms.Label label7;
     }
 }
 
