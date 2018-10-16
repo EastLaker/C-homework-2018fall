@@ -27,14 +27,15 @@ namespace DrawCayleyTree
 
         private void drawButton_Click(object sender, EventArgs e)
         {
-            drawCayleyTree(10, 250, 500, leng, -Math.PI / 2);
+            graphics.Clear(Color.Wheat);
+            drawCayleyTree(10, 250, 500, leng, -Math.PI / 2);           
         }
 
         void drawCayleyTree(int n,
             double x0, double y0, double leng, double th)
         {
             if (n == 0) return;
-
+            
             double x1 = x0 + leng * Math.Cos(th);
             double y1 = y0 + leng * Math.Sin(th);
 
