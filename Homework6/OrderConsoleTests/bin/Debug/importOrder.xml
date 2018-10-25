@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OrderService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <myOrderDetail>
+    <OrderDetails>
+      <name>xbox</name>
+      <client>jack ma</client>
+      <price>1999</price>
+      <number>3</number>
+      <stuffID>0</stuffID>
+    </OrderDetails>
+    <OrderDetails>
+      <name>ps4pro</name>
+      <client>pony ma</client>
+      <price>2999</price>
+      <number>7</number>
+      <stuffID>0</stuffID>
+    </OrderDetails>
+  </myOrderDetail>
+</OrderService>
