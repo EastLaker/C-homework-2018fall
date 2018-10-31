@@ -1,0 +1,14 @@
+D:\sourcefile\C#homework\C-homework-2018fall\Homework7\OrderForm\bin\Debug\OrderForm.exe.config
+D:\sourcefile\C#homework\C-homework-2018fall\Homework7\OrderForm\bin\Debug\OrderForm.exe
+D:\sourcefile\C#homework\C-homework-2018fall\Homework7\OrderForm\bin\Debug\OrderForm.pdb
+D:\sourcefile\C#homework\C-homework-2018fall\Homework7\OrderForm\bin\Debug\OrderConsole.exe
+D:\sourcefile\C#homework\C-homework-2018fall\Homework7\OrderForm\bin\Debug\OrderConsole.pdb
+D:\sourcefile\C#homework\C-homework-2018fall\Homework7\OrderForm\bin\Debug\OrderConsole.exe.config
+D:\sourcefile\C#homework\C-homework-2018fall\Homework7\OrderForm\obj\Debug\OrderForm.csprojAssemblyReference.cache
+D:\sourcefile\C#homework\C-homework-2018fall\Homework7\OrderForm\obj\Debug\OrderForm.Form1.resources
+D:\sourcefile\C#homework\C-homework-2018fall\Homework7\OrderForm\obj\Debug\OrderForm.Properties.Resources.resources
+D:\sourcefile\C#homework\C-homework-2018fall\Homework7\OrderForm\obj\Debug\OrderForm.csproj.GenerateResource.cache
+D:\sourcefile\C#homework\C-homework-2018fall\Homework7\OrderForm\obj\Debug\OrderForm.csproj.CoreCompileInputs.cache
+D:\sourcefile\C#homework\C-homework-2018fall\Homework7\OrderForm\obj\Debug\OrderForm.csproj.CopyComplete
+D:\sourcefile\C#homework\C-homework-2018fall\Homework7\OrderForm\obj\Debug\OrderForm.exe
+D:\sourcefile\C#homework\C-homework-2018fall\Homework7\OrderForm\obj\Debug\OrderForm.pdb

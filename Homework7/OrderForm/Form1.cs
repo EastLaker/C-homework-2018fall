@@ -29,34 +29,39 @@ namespace OrderForm
 
         private void AddOrderButton_Click(object sender, EventArgs e)
         {
+            Order ordertemp = new Order();
+            OrderDetails detailstemp = new OrderDetails();
+            ordertemp.Client = Clientbox.Text;
+            detailstemp.name = Namebox.Text;
             try
             {
-                Order ordertemp = new Order();
-                OrderDetails detailstemp = new OrderDetails();
-                ordertemp.Client = Clientbox.Text;
-                detailstemp.name = Namebox.Text;
                 detailstemp.price = int.Parse(Pricebox.Text);
-                detailstemp.number = int.Parse(Numberbox.Text);
-                ordertemp.AddDetail(detailstemp);
-                server.AddOrder(ordertemp);
-
-                //this.dataGridView1.Rows.Add(values);
-                //refresh datagridview
-                this.dataGridView1.Rows.Clear();
-                int i = 0, count = server.myOrder.Count;
-                while (i < count)
-                {
-                    String[] values = { i.ToString(),
-                                server.myOrder[i].Client,
-                                server.myOrder[i].TotalPrice.ToString(),
-                                server.myOrder[i].myOrderDetail[0].name,
-                                server.myOrder[i].myOrderDetail[0].price.ToString(),
-                                server.myOrder[i].myOrderDetail[0].number.ToString()};
-                    this.dataGridView1.Rows.Add(values);
-                    i++;
-                }
             }
-            catch { }
+            catch { Pricebox.Text = "Invalid Input";return; }
+            try
+            {
+                detailstemp.number = int.Parse(Numberbox.Text);
+            }
+            catch { Numberbox.Text = "Invalid Input";return; }
+            ordertemp.AddDetail(detailstemp);
+            server.AddOrder(ordertemp);
+
+            //this.dataGridView1.Rows.Add(values);
+            //refresh datagridview
+            this.dataGridView1.Rows.Clear();
+            int i = 0, count = server.myOrder.Count;
+            while (i < count)
+            {
+                String[] values = { i.ToString(),
+                            server.myOrder[i].Client,
+                            server.myOrder[i].TotalPrice.ToString(),
+                            server.myOrder[i].myOrderDetail[0].name,
+                            server.myOrder[i].myOrderDetail[0].price.ToString(),
+                            server.myOrder[i].myOrderDetail[0].number.ToString()};
+                this.dataGridView1.Rows.Add(values);
+                i++;
+            }
+            
         }
 
         private void DeleteOrderButton_Click(object sender, EventArgs e)
