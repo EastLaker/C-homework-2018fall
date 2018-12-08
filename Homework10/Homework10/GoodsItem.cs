@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace OrderManagement
 {
-    class GoodsItem
+    public class GoodsItem
     {
         [Key]
         public string ItemId { get; set; }

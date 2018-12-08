@@ -8,9 +8,9 @@ using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace OrderManagement
 {
-    class OrderDataBase:DbContext
+    public class OrderDB:DbContext
     {
-        public OrderDataBase() : base("OrderDataBase")
+        public OrderDB() : base("OrderDataBase")
         {
 
         }

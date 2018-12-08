@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Homework10", "Homework10\Homework10.csproj", "{D93D69C8-15C8-4B08-81FF-3A2E869AD248}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderForm", "OrderForm\OrderForm.csproj", "{EF3D4407-3948-4A8B-826C-1A68697F0390}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D93D69C8-15C8-4B08-81FF-3A2E869AD248}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D93D69C8-15C8-4B08-81FF-3A2E869AD248}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D93D69C8-15C8-4B08-81FF-3A2E869AD248}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF3D4407-3948-4A8B-826C-1A68697F0390}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF3D4407-3948-4A8B-826C-1A68697F0390}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF3D4407-3948-4A8B-826C-1A68697F0390}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF3D4407-3948-4A8B-826C-1A68697F0390}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

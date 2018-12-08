@@ -7,22 +7,22 @@ using System.Data.Entity;
 
 namespace OrderManagement
 {
-    class OrderService
+    public class OrderService
     {
         public void Add(Order order)
         {
-            using (var db = new OrderDataBase())
+            using (var db = new OrderDB())
             {
                 db.Order.Add(order);
                 //db.Order.Attach(order);
                 //db.Entry(order).State = EntityState.Added;
-                db.SaveChanges();
+                //db.SaveChanges();
             }
         }
 
         public void Delete(String orderId)
         {
-            using (var db = new OrderDataBase())
+            using (var db = new OrderDB())
             {
                 var order = db.Order.Include("Items").SingleOrDefault(o => o.OrderId == orderId);
                 db.GoodsItem.RemoveRange(order.Items);
@@ -33,7 +33,7 @@ namespace OrderManagement
 
         public void Update(Order order)
         {
-            using (var db = new OrderDataBase())
+            using (var db = new OrderDB())
             {
                 db.Order.Attach(order);
                 db.Entry(order).State = EntityState.Modified;
@@ -45,7 +45,7 @@ namespace OrderManagement
 
         public Order GetOrder(String Id)
         {
-            using (var db = new OrderDataBase())
+            using (var db = new OrderDB())
             {
                 return db.Order.Include("Items").
                   SingleOrDefault(o => o.OrderId == Id);
@@ -54,7 +54,7 @@ namespace OrderManagement
 
         public List<Order> GetAllOrders()
         {
-            using (var db = new OrderDataBase())
+            using (var db = new OrderDB())
             {
                 return db.Order.Include("items").ToList<Order>();
             }
@@ -63,7 +63,7 @@ namespace OrderManagement
 
         public List<Order> QueryByCustormer(String custormer)
         {
-            using (var db = new OrderDataBase())
+            using (var db = new OrderDB())
             {
                 return db.Order.Include("items")
                   .Where(o => o.Customer.Equals(custormer)).ToList<Order>();
@@ -72,7 +72,7 @@ namespace OrderManagement
 
         public List<Order> QueryByGoods(String product)
         {
-            using (var db = new OrderDataBase())
+            using (var db = new OrderDB())
             {
                 var query = db.Order.Include("items")
                   .Where(o => o.Items.Where(
