@@ -14,7 +14,7 @@ namespace Homework9
     public class Crawler
     {
         public Hashtable urls = new Hashtable();
-        private int count = 0;
+        static private int count = 0;
         Stopwatch stopwatch = new Stopwatch();
         
 
@@ -30,7 +30,7 @@ namespace Homework9
                     if ((bool)urls[url]) continue;
                     current = url;
                 }
-                if (current == null || count > 100) break;
+                if (current == null || count > 1000) break;
 
                 Console.WriteLine("Crawling " + current + " page!");
                 Task.Run(()=>Download(current));

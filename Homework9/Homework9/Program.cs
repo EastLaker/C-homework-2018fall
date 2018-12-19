@@ -18,9 +18,13 @@ namespace Homework9
             if (args.Length >= 1) startUrl = args[0];
 
             myCrawer.urls.Add(startUrl, false); //add start page
-            new Thread(myCrawer.Crawl).Start(); //start crawling
-            //new Thread(myCrawer.Crawl).Start();
-            
+            Thread thread1 = new Thread(new ThreadStart(myCrawer.Crawl)); //start crawling
+            thread1.Start();
+            thread1.Name = "1";
+            //Thread thread2 = new Thread(new ThreadStart(myCrawer.Crawl)); //start crawling
+            //thread2.Start();
+            //thread2.Name = "2";
+
             Console.Read();
         }
     }
